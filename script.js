@@ -9,15 +9,15 @@ function checkGuess() {
   while (attempts > 0) {
     if (guess == randomNumber) {
       attempts = 0;
-      feedbackElement.innerHTML = "Congratulations! " + attempts + " left";
+      feedbackElement.innerHTML = "Congratulations! " + attempts + " attempts left";
       feedbackElement.style.color = "green";
       break;
     } else if (guess < randomNumber) {
-      feedbackElement.innerHTML = "Too low! Try again. " + attempts + " left";
+      feedbackElement.innerHTML = "Too low! Try again. " + attempts + " attempts left";
       feedbackElement.style.color = "red";
       break;
     } else {
-      feedbackElement.innerHTML = "Too high! Try again. " + attempts + " left";
+      feedbackElement.innerHTML = "Too high! Try again. " + attempts + " attempts left";
       feedbackElement.style.color = "red";
       break;
     }
